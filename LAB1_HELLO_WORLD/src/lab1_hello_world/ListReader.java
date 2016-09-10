@@ -15,13 +15,16 @@ public class ListReader {
    public void readList(File path){
        
        try {
-            String line = null; 
+            String line = ""; 
             BufferedReader bf = new BufferedReader(new FileReader(path));
-             do 
+            while ((line != null))
              {
-                System.out.println(bf.readLine());  
+               
+                line = bf.readLine();
+                if (line != null)    
+                    System.out.println(line);  
              } 
-             while ((line = bf.readLine()) != null);
+           
        }
        catch ( IOException e) {
            System.out.print(e.getMessage());
@@ -29,6 +32,5 @@ public class ListReader {
        }
                       
    }
- 
     
 }

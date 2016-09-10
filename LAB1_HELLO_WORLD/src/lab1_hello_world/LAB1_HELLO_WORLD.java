@@ -21,7 +21,7 @@ public class LAB1_HELLO_WORLD {
         System.out.println("Hello World");
         
         ListReader lr = new ListReader();
-        String path = "liste.txt";
+        String path = "src/lab1_hello_world/liste.txt";
         File liste = new File(path);
         lr.readList(liste);
     }

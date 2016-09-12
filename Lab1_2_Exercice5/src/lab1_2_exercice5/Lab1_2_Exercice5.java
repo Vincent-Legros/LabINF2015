@@ -22,7 +22,7 @@ public class Lab1_2_Exercice5 {
        
         try {
             String text = Utf8File.loadFileIntoString("src/lab1_2_Exercice5/liste.txt");
-            System.out.println(text);
+            System.out.println(text.trim());
         } catch (IOException ex) {
             Logger.getLogger(Lab1_2_Exercice5.class.getName()).log(Level.SEVERE, null, ex);
         }
